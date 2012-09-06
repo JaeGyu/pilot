@@ -2,14 +2,18 @@
 <html>
 <head>
 <title>Chat</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script>
 	var emptyChk = function() {
 		if (user_id.value == "" || message.value == "") {
 			alert("Empty field!");
 		}
 	};
+	
+	$(function(){
+		$('#message').focus();
+	});
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 </head>
 <body>
 	<%
